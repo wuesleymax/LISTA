@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="topo">
+        <p><a href="https://ifpr.edu.br/cascavel/">
+        <img class="img" src="reitoria-horizontal-3-branca.png" alt="Logo IFPR">
+        </a></p>
+        <h1 class="titulo">Lista de Tarefas</h1>
+        <h1 class="ifpr">IFPR</h1>
+    </div>
+
+    <div class="caixa">
+        <div class="linha">
+            <input class="input-tarefa" placeholder="Digite o nome da tarefa">
+            <button class="button-adc-tarefa">Pesquisar</button>
+        </div>
+    
+        <div class="linha">
+            <input class="input-task" placeholder="A fazer...">
+            <select id="priori">
+                <option value="alta">Alta Prioridade</option>
+                <option value="media">Média Prioridade</option>
+                <option value="baixa">Baixa Prioridade</option>
+            </select>
+            <button class="button-add-task">Adicionar</button>
+        </div>
+    
+        <ul class="list-tarefas"></ul>
+    </div>
+
+    <div id="modal-confirmacao" class="modal">
+        <div class="modal-content">
+          <p id="modal-mensagem">Tem certeza de que deseja realizar esta ação?</p>
+          <div class="modal-buttons">
+            <button id="modal-sim" class="modal-btn">Sim</button>
+            <button id="modal-nao" class="modal-btn">Não</button>
+          </div>
+        </div>
+    </div>      
+    
+    <footer class="fim">
+        <p>Wuesley e Carlos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

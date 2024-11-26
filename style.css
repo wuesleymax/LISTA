@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.caixa {
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre as linhas */
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos da mesma linha */
+}
+
+.input-tarefa,
+.input-task {
+    border: none;
+    border-radius: 5px;
+    flex: 2; /* Ocupa mais espaço na linha */
+    height: 40px;
+    padding-left: 10px;
+}
+
+#priori {
+    border: none;
+    border-radius: 5px;
+    flex: 1; /* Ocupa menos espaço na linha */
+    height: 40px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.button-adc-tarefa,
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    flex: 1; /* Botões ocupam menos espaço que os inputs */
+    height: 40px;
+    background-color: #003329;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-adc-tarefa:hover,
+.button-add-task:hover {
+    opacity: 0.8;
+}
+
+.list-tarefas {
+    margin-top: 20px;
+    list-style: none; /* Remove marcadores de lista */
+}
+
+
+
+.topo {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #1a9e1a; /* Cor de fundo para destaque (opcional) */
+    color: white; /* Cor do texto */
+  }
+
+  .img {
+    max-height: 50px; /* Ajusta o tamanho da imagem */
+  }
+
+ 
+
+  .ifpr {
+    margin: 0; /* Remove espaçamento extra no h1 */
+  }
+
+  .fim {
+    background-color: #1a9e1a;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha o texto dentro do elemento flex */
+    color: white;
+    height: 100px; /* Altura definida para demonstrar o alinhamento */
+    border-radius: 5px;
+}
+
+.list-tarefas {
+    margin-top: 20px;
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+}
+
+.list-tarefas li {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 10px; /* Espaço entre os elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.list-tarefas li img {
+    width: 20px; /* Tamanho fixo dos ícones */
+    height: 20px;
+    cursor: pointer; /* Mostra o ponteiro ao passar sobre o ícone */
+}
+
+.list-tarefas li p {
+    flex: 1; /* Faz o texto ocupar o espaço disponível */
+    margin: 0;
+    padding-left: 10px; /* Espaçamento à esquerda do texto */
+    text-align: left; /* Garante o alinhamento do texto */
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.list-tarefas li.done p {
+    text-decoration: line-through; /* Marca texto como concluído */
+    color: #999; /* Cor de texto para itens concluídos */
+}
+
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .modal-btn {
+    background-color: #1a9e1a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-btn:hover {
+    opacity: 0.8;
+  }
+  
+  #modal-nao {
+    background-color: red;
+  }
+  
